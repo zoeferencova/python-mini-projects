@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+    <form action="/submit_form" method="post">
+        <label for="name">Text: </label>
+        <input type="text" id="text" name="text" />
+        <button type="submit">Submit</button>
+    </form>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
